@@ -69,10 +69,10 @@ gulp.task('images', function() {
   .pipe(gulp.dest('dist'))
 });*/
 
-gulp.task('browserSync', function() {
+gulp.task('browserSync', function(){
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: ''
     },
   })
 });
