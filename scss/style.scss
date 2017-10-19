@@ -1,0 +1,17 @@
+@import 'lib/normalize';
+@import 'variables/colors';
+@import 'layouts';
+
+@include normalize();
+
+header {
+  position: relative;
+
+  &::before {
+	content: "";
+	background-color: #eee111;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+  }	
+}
