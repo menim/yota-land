@@ -1,9 +1,40 @@
 .l-outer-wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
+   background-color: #fff;
+
+  &--header {
+  	background-image: linear-gradient(to right,$additional-green 0%, $additional-green  50%, $additional-red 50%, $additional-red 100%)
+  }
+
+  &--view-slogan {
+  	background-image: url('../images/header-bg.jpg');
+  	position: relative;
+  	background-size: contain;
+  	height: 665px; //test size
+  	  
+  	  &:before {
+        content: '';
+        position: absolute;
+        background-color: rgba($main-color2,0.83);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+      }
+  }
+
+  &--secondary-theme {
+  	background-color: $main-color2;
+  }
 }
 
 .l-inner-wrapper { 
   max-width: 1356px;
   margin: 0 auto;
+
+  &--depth {
+    z-index: 1;
+    position: relative;
+  }
 }
+
