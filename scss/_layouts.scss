@@ -1,7 +1,8 @@
 .l-outer-wrapper {
    background-color: #fff;
    max-width: 1920px;
-   overflow-x: hidden; 
+   overflow-x: hidden;
+   margin: 0 auto; 
 
   &--header {
   	background-image: linear-gradient(to right,$additional-green 0%, $additional-green  50%, $additional-red 50%, $additional-red 100%)
