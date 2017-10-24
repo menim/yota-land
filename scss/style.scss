@@ -3,6 +3,16 @@
 
 @import 'helpers/mixins';
 
+@import 'base/base';
 @import 'layouts';
 
+
+@import 'components/header';
+@import 'components/logo';
+@import 'components/call';
+@import 'components/yota-description';
+
 @include normalize();
+@include font-face('geometriaBold', '../fonts/geometria-bold');
+@include font-face('geometriaItalic', '../fonts/geometria-italic');
+@include font-face('geometriaMediumI', '../fonts/geometria-mediumitalic');
