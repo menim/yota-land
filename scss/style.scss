@@ -15,6 +15,8 @@
 @import 'components/view-slogan';
 @import 'components/btn-primary';
 
+@import 'components/section-header';
+
 @include normalize();
 @include font-face('geometriaBold', '../fonts/geometria-bold');
 @include font-face('geometriaItalic', '../fonts/geometria-italic');
