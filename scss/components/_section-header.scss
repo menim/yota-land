@@ -1,0 +1,19 @@
+.section-header {
+  color: $main-color2;
+  font-size: 2.75em;
+  font-family: geometriaBold, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: get-line-height(44px, 64px);
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+  &--invert {
+    color: $main-color1;
+  }
+
+  &--advantages {
+    margin-top: 32px;
+  }
+}
