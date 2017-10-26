@@ -45,3 +45,14 @@
 @function get-line-height($font-size, $line-height) {
    @return $line-height / $font-size;
 }  
+
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
