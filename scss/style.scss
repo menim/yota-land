@@ -17,10 +17,14 @@
 
 @import 'components/section-header';
 
+@import 'components/advantages';
+
 @include normalize();
 @include font-face('geometriaBold', '../fonts/geometria-bold');
 @include font-face('geometriaItalic', '../fonts/geometria-italic');
 @include font-face('geometriaMediumI', '../fonts/geometria-mediumitalic');
 @include font-face('geometriaHeavy','../fonts/geometria-heavy');
 @include font-face('geometriaRegular', '../fonts/geometria');
+@include font-face('geometriaExtraL', '../fonts/geometria-extralight');
+
 
