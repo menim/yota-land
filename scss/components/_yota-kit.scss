@@ -1,0 +1,36 @@
+.yota-kit {
+  padding-bottom: 4em;  
+
+  .yota-kit__list {
+  	padding-left: 0;
+  	margin: 0;
+  	@include clearfix();
+  	text-align: center;
+  }
+
+  .yota-kit__item {
+  	width: 25%;
+  	float: left;
+  }
+
+  .yota-kit__header {
+  	font-size: 1.1875em;
+  	font-family: geometriaRegular, sans-serif;
+  	color: $main-color1;
+  	text-transform: uppercase;
+  	line-height: get-line-height(19px, 32px);
+  	letter-spacing: 0.02em;
+  	margin-top: 0;
+  	margin-bottom: 49px;
+  }
+
+  .yota-kit__inner-list {
+  	font-size: 1em;
+  	font-family: geometriaLight, sans-serif;
+  	line-height: get-line-height(16px, 32px);
+  	color: $main-color1;
+  	padding-left: 0;
+  	margin-bottom: 0;
+  	margin-top: 40px;
+  }
+}
