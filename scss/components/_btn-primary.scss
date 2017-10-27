@@ -4,14 +4,26 @@
   background-color: $additional-red;
   border-radius: 4px;
   border: none;
+  padding: 0;
   color: $main-color1;
   font-family: geometriaBold, sans-serif;
   font-size: 1em;
   letter-spacing: 0.04em;
   box-shadow: 1px 1.732px 0.67px 0.33px rgba(46, 50, 50, 0.6);
 
+  &--invert {
+    width: 206px;
+    background-color: transparent;
+    border: 2px #fff solid;
+  }
+
+  &--yota-kit {
+  	margin-top: 51px;
+  }
+
   &--view-slogan {
     margin: 84px auto 0;
     display: block;
   }
+
 }
