@@ -1,0 +1,40 @@
+.filter-form {
+      font-size: 0; // set for delete margins before inline-block elements;
+  &__item {
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 1.9911%;
+    width: 100%;
+    max-width: 36.7994%;
+
+    &--big {
+       max-width: 32.7433%;
+    }
+
+    &--small {
+      max-width: 12.3893%;
+    }
+
+    &:first-child {
+       margin-left: 0;
+    }
+  }
+
+  &__label {
+    font-family: geometriaLight;
+    display: block;
+    color: $main-color2;
+    padding-bottom: 1em;
+  }
+
+  &__input {
+  	box-sizing: border-box;
+    display: block;
+    border: #d6d6d6 1px solid;
+    border-radius: 4px;
+    box-shadow: inset 0px 2px 3px 0px rgba(4, 4, 5, 0.3);
+    width: 100%;
+    height: 46px;
+  }
+}
+
