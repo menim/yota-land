@@ -23,6 +23,8 @@
 
 @import 'components/filter-form';
 
+@import 'components/yota-accessories';
+
 @include normalize();
 @include font-face('geometriaBold', '../fonts/geometria-bold');
 @include font-face('geometriaItalic', '../fonts/geometria-italic');
