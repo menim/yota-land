@@ -1,0 +1,27 @@
+.callback-form {
+  @include clearfix();
+  position: relative;
+ 
+
+  &__item {
+    float: left;
+    width: 36.7256%;
+    margin-right: 4.1297%;
+  }
+
+  &__label {
+  	font-size: 1em;
+  	font-family: geometriaLight, sans-serif;
+    display: block;
+    color: $main-color1;
+    padding-bottom: 18px;
+  }
+
+  &__field {
+  	box-sizing: border-box;
+  	border-radius: 4px;
+    width: 100%;
+    height: 48px;
+    box-shadow: inset 0px 2px 3px 0px rgba(4, 4, 5, 0.45);
+  }
+}

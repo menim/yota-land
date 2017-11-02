@@ -29,6 +29,8 @@
 
 @import 'components/yota-lpg-equipment';
 
+@import 'components/callback-form'; 
+
 @include normalize();
 @include font-face('geometriaBold', '../fonts/geometria-bold');
 @include font-face('geometriaItalic', '../fonts/geometria-italic');

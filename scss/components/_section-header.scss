@@ -28,4 +28,13 @@
   &--yota-lpg-equipment {
     margin-top: 79px; 
   }
+
+  &--footer {
+    color: $main-color1;
+    text-align: left;
+    margin-bottom: 33px;
+      span {
+        font-family: geometriaLight, sans-serif;
+      }
+  }
 }
