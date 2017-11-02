@@ -25,6 +25,8 @@
 
 @import 'components/yota-accessories';
 
+@import 'components/youtube-reviews';
+
 @include normalize();
 @include font-face('geometriaBold', '../fonts/geometria-bold');
 @include font-face('geometriaItalic', '../fonts/geometria-italic');
