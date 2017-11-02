@@ -1,58 +1,57 @@
 .yota-accessories {
 
   &__small-header {
-  	font-size: 1em;
-  	font-family: geometriaLight, sans-serif;
-  	line-height: get-line-height(16px, 26px);
-  	color: $main-color2;
-  	text-align: center;
-  	margin-top: 0;
-  	margin-bottom: 52px;
+    font-size: 1em;
+    font-family: geometriaLight, sans-serif;
+    line-height: get-line-height(16px, 26px);
+    color: $main-color2;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 52px;
   }
 
   &__list {
-  	@include clearfix();
-  	padding-left: 0;
-  	margin: 0;
-
+    @include clearfix();
+    padding-left: 0;
+    margin: 0;
   }
 
   &__item {
-  	text-align: center;
-  	width: 23.6725664%;
-  	margin-right: 1.7699115%;
-  	float: left;
-  	position: relative;
-  	padding-top: 30px;
-  	padding-bottom: 30px;
-  	margin-bottom: 4em;
-  	box-shadow: 0.391px 0.921px 9px 0px rgba(46, 50, 50, 0.55);
-  	border-radius: 4px;
+    text-align: center;
+    width: 23.6725664%;
+    margin-right: 1.7699115%;
+    float: left;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 4em;
+    box-shadow: 0.391px 0.921px 9px 0px rgba(46, 50, 50, 0.55);
+    border-radius: 4px;
 
-  	&:nth-child(4n) {
+    &:nth-child(4n) {
       margin-right: 0;
-  	}
-  	
-  	&:before {
-  	  content: '';
-  	  position: absolute;
-  	  top: 40%;
-  	  left: 0;
-  	  right: 0;
-  	  bottom: 0;
-  	  background-color: $additional-green;
-  	  border-radius: 0 0 4px 4px;
-  	}
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 40%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $additional-green;
+      border-radius: 0 0 4px 4px;
+    }
   }
 
   &__img {
-  	position: relative;
+    position: relative;
   }
 
   &__caption {
-  	font-size: 1.375em;
-  	font-family: geometriaRegular, sans-serif;
-  	font-weight: normal;
+    font-size: 1.375em;
+    font-family: geometriaRegular, sans-serif;
+    font-weight: normal;
     color: $main-color1;
     position: relative;
     margin-bottom: 2em;
@@ -67,7 +66,4 @@
     position: relative;
     text-decoration: none;
   }
-
-
-
 }
