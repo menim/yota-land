@@ -12,6 +12,12 @@
   box-shadow: 1px 1.732px 0.67px 0.33px rgba(46, 50, 50, 0.6);
   cursor: pointer;
 
+  &:hover {
+    border: 2px solid #d02738;
+    background-color: transparent;
+    color: #d02738;    
+  }
+
   &--invert {
     width: 206px;
     background-color: transparent;
