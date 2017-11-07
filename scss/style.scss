@@ -1,5 +1,6 @@
 @import 'lib/normalize';
 @import 'variables/colors';
+@import 'variables/breakpoints';
 
 @import 'helpers/mixins';
 
@@ -39,5 +40,6 @@
 @include font-face('geometriaRegular', '../fonts/geometria');
 @include font-face('geometriaExtraL', '../fonts/geometria-extralight');
 @include font-face('geometriaLight', '../fonts/geometria-light');
+
 
 
