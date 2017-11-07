@@ -35,6 +35,10 @@
   max-width: 1356px;
   margin: 0 auto;
 
+  &--pb-lg {
+    padding-bottom: 136px;
+  }
+
   &--depth {
     z-index: 1;
     position: relative;
