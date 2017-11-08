@@ -24,6 +24,11 @@
         right: 0;
         z-index: 0;
       }
+
+      @include breakpoint(medium){
+        padding-top: 102px;
+        padding-bottom: 70px;
+      }
   }
 
   &--secondary-theme {
@@ -39,6 +44,10 @@
 
   &--pb-lg {
     padding-bottom: 136px;
+
+    @include breakpoint(medium){
+      padding-bottom: 32px;
+    }
   }
 
   &--depth {

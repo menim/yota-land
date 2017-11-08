@@ -28,8 +28,24 @@
     box-shadow: 0.391px 0.921px 9px 0px rgba(46, 50, 50, 0.55);
     border-radius: 4px;
 
+    @include breakpoint(medium){
+      width: 31%;
+      margin-right: 3.3333%;
+      margin-bottom: 2em;
+    }
+
     &:nth-child(4n) {
       margin-right: 0;
+
+      @include breakpoint(medium){
+        margin-right: 3.3333%;
+      }
+    }
+
+    &:nth-child(3n){
+      @include breakpoint(medium){ 
+        margin-right: 0;
+      }
     }
 
     &:before {
@@ -62,6 +78,10 @@
 
     @include breakpoint(large){
       font-size: 1.2em;
+    }
+
+    @include breakpoint(medium){
+      font-size: 1.1em;
     }
   }
 

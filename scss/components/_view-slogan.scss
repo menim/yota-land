@@ -9,11 +9,15 @@
     line-height: get-line-height(44px, 64px);
     margin: 0;
 
+    @include breakpoint(medium){
+      font-size: 1.75em;
+    }
+
       span {
         font-family: 'geometriaHeavy', sans-serif;
         font-size: 2em;
         line-height: 0;
-        
+
         span {
           color: $additional-green;
           font-size: 1em;

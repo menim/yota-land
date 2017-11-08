@@ -10,6 +10,11 @@
     float: left;
     width: 33.3333%;
     text-align: center;
+
+    @include breakpoint(medium){
+      width: 100%;
+      float: none;
+    }
   }
 
   &__header {
@@ -22,10 +27,18 @@
     margin-top: 0;
     margin-bottom: 49px;
 
+    @include breakpoint(medium){
+      margin-bottom: 29px;
+    }
+
   }
 
   &__icon {
     margin-bottom: 32px;
+
+    @include breakpoint(medium){
+      margin-bottom: 22px;
+    }
   }
 
   &__description {
@@ -36,5 +49,11 @@
     text-align: center;
     max-width: 295px;
     margin: 0 auto 64px;
+
+    @include breakpoint(medium){
+      font-size: 1em;
+      line-height: get-line-height(16px, 25px);
+      margin-bottom: 44px;
+    }
   }
 }

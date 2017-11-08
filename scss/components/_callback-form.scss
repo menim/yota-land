@@ -7,6 +7,17 @@
     float: left;
     width: 36.7256%;
     margin-right: 4.1297%;
+
+    @include breakpoint(medium){
+      width: 48%;
+      margin-right: 4%;
+    }
+
+    &:nth-child(2) {
+      @include breakpoint(medium){
+        margin-right: 0;
+      }
+    }
   }
 
   &__label {

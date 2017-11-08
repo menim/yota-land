@@ -8,6 +8,12 @@
   margin-top: 64px;
   margin-bottom: 64px;
 
+  @include breakpoint(medium) {
+    font-size: 2em;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
   &--invert {
     color: $main-color1;
   }
@@ -27,6 +33,11 @@
 
   &--yota-lpg-equipment {
     margin-top: 79px; 
+
+    @include breakpoint(medium){
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
   }
 
   &--footer {

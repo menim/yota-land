@@ -10,10 +10,25 @@
     width: 23.746313%;
     margin-right: 1.65%;
     margin-bottom: 30px;
-    line-height: 1;    
+    line-height: 1;   
+
+    @include breakpoint(medium){
+      width: 31%;
+      margin-right: 3.3333%;
+    } 
     
     &:nth-child(4n) {
-      margin-right: 0;	
+      margin-right: 0;
+
+      @include breakpoint(medium){
+        margin-right: 3.3333%;
+      }	
+    }
+
+    &:nth-child(3n){
+      @include breakpoint(medium){
+        margin-right: 0;
+      }
     }
   }
 }
