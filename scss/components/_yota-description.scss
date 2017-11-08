@@ -3,9 +3,17 @@
   font-family: geometriaMediumI, sans-serif;
   color: $main-color2;
 
+  @include breakpoint(large){
+    font-size: .9em;
+  }
+
   &--header {
-  	float: left;
-  	margin-left: 78px;
-  	margin-top: 32px;
+    float: left;
+    margin-left: 78px;
+    margin-top: 32px;
+
+    @include breakpoint(large){
+      margin-left: 50px;  
+    }
   }
 }

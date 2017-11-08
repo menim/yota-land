@@ -5,6 +5,10 @@
     position: relative;
     margin-top: 32px;
     margin-right: 273px;
+
+    @include breakpoint(large){
+      margin-right: 240px; 
+    }
     
   }
 
@@ -14,6 +18,10 @@
     font-size: 1em;
     font-family: 'geometriaBold', sans-serif;
     text-align: right;
+
+    @include breakpoint(large){
+      font-size: .9em;
+    }
   }
 
   &__callback-btn {
@@ -24,5 +32,9 @@
     background-color: transparent;
     padding: 0;
     cursor: pointer;
+
+    @include breakpoint(large){
+      font-size: .65em;
+    }
   }
 }

@@ -22,6 +22,11 @@
   	letter-spacing: 0.02em;
   	margin-top: 0;
   	margin-bottom: 49px;
+
+    @include breakpoint(large){
+      font-size: 1em;
+      margin-bottom: 30px;
+    }
   }
 
   .yota-kit__inner-list {

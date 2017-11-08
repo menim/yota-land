@@ -60,5 +60,9 @@
     height: 48px;
     margin-top: 36px;
     width: 16.9616%; 
+
+    @include breakpoint(large){
+      font-size: .9em;
+    }
   }
 }

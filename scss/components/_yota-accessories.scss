@@ -59,6 +59,10 @@
     position: relative;
     margin-bottom: 2em;
     margin-top: 1em;
+
+    @include breakpoint(large){
+      font-size: 1.2em;
+    }
   }
 
   &__link {
