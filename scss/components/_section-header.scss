@@ -18,6 +18,10 @@
     font-size: 1.5em;
   }
 
+  @include breakpoint(mobile){
+    font-size: 1em;
+  }
+
   &--invert {
     color: $main-color1;
   }

@@ -17,6 +17,10 @@
       font-size: 1.3em;
     }
 
+    @include breakpoint(mobile){
+      font-size: 1em;
+    }
+
       span {
         font-family: 'geometriaHeavy', sans-serif;
         font-size: 2em;

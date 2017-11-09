@@ -13,6 +13,10 @@
     @include breakpoint(small){
       margin-right: 170px;
     }
+
+    @include breakpoint(mobile){
+      margin-right: 10px;
+    }
   }
 
   &__telephone {
