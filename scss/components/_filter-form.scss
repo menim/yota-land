@@ -7,12 +7,28 @@
     width: 100%;
     max-width: 36.7994%;
 
+    @include breakpoint(small){
+      max-width: 100%;
+      display: block;
+      margin-bottom: 1em;
+    }
+
     &--big {
-       max-width: 32.7433%;
+      max-width: 32.7433%;
+
+      @include breakpoint(small){
+        max-width: 100%;
+        margin-left: 0;
+      }
     }
 
     &--small {
       max-width: 12.3893%;
+
+      @include breakpoint(small){
+        max-width: 100%;
+        margin-left: 0;
+      }
     }
 
     &:first-child {
@@ -25,6 +41,10 @@
     display: block;
     color: $main-color2;
     padding-bottom: 1em;
+
+    @include breakpoint(small){
+      padding-bottom: .5em;
+    }
   }
 
   &__input {

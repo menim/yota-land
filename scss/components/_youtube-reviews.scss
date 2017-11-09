@@ -15,7 +15,13 @@
     @include breakpoint(medium){
       width: 31%;
       margin-right: 3.3333%;
+      margin-bottom: 15px;
     } 
+
+    @include breakpoint(small){
+      width: 100%;
+      margin-right: 0;
+    }
     
     &:nth-child(4n) {
       margin-right: 0;

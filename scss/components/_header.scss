@@ -4,23 +4,31 @@
   height: 96px;
 
   &:before {
-  	content: '';
-  	background-image: url('../images/filter-part-left.jpg');
-  	display: block;
-  	position: absolute;
-  	left: -186px;
+    content: '';
+    background-image: url('../images/filter-part-left.jpg');
+    display: block;
+    position: absolute;
+    left: -186px;
     width: 389px;
-  	height: 96px;
+    height: 96px;
+
+   @include breakpoint(small){
+      left: -256px;
+   }
   }
 
   &:after {
-  	content: '';
-  	background-image: url('../images/filter-part-right.jpg');
-  	position: absolute;
-  	display: block;
-  	width: 310px;
-  	height: 96px;
-  	right: -80px;
-  	top: 0;
+    content: '';
+    background-image: url('../images/filter-part-right.jpg');
+    position: absolute;
+    display: block;
+    width: 310px;
+    height: 96px;
+    right: -80px;
+    top: 0;
+
+    @include breakpoint(small){
+      right: -150px;
+    }
   }
 }

@@ -3,5 +3,16 @@
     float: left;
     position: relative;
     margin-top: 13px;
+
+   @include breakpoint(small){
+     margin-top: 26px;
+   }
+  }
+
+  &__image {
+    @include breakpoint(small){
+      width: 100px;
+      height: auto;
+    }
   }
 }

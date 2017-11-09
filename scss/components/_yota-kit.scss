@@ -16,9 +16,13 @@
   	width: 25%;
   	float: left;
 
-    @include breakpoint(medium) {
+    @include breakpoint(medium){
       width: 50%;
       margin-bottom: 32px;
+    }
+
+    @include breakpoint(small){
+      width: 100%;
     }
   }
 

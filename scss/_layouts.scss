@@ -29,6 +29,11 @@
         padding-top: 102px;
         padding-bottom: 70px;
       }
+
+      @include breakpoint(small){
+        padding-top: 73px;
+        padding-bottom: 40px;
+      }
   }
 
   &--secondary-theme {
