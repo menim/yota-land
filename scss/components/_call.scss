@@ -6,6 +6,11 @@
     margin-top: 32px;
     margin-right: 273px;
 
+    @supports (display: flex){
+      margin-top: 0;
+      margin-left: auto;
+    }
+
     @include breakpoint(large){
       margin-right: 240px; 
     }

@@ -3,6 +3,11 @@
   position: relative;
   height: 96px;
 
+  @supports (display: flex){
+    display: flex;
+    align-items: center;
+  }
+
   &:before {
     content: '';
     background-image: url('../images/filter-part-left.jpg');
