@@ -3,6 +3,11 @@
     @include clearfix();
     margin: 0;
     padding-left: 0;
+    
+    @supports (display: flex){
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -12,8 +17,8 @@
     text-align: center;
 
     @include breakpoint(medium){
-      width: 100%;
       float: none;
+      width: 100%;
     }
   }
 
