@@ -10,11 +10,23 @@
   	margin: 0;
   	@include clearfix();
   	text-align: center;
+
+    @supports (display: flex){
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   .yota-kit__item {
-  	width: 25%;
-  	float: left;
+    width: 25%;
+    float: left;
+
+    @supports (display: flex){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     @include breakpoint(medium){
       width: 50%;
