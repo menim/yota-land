@@ -1,8 +1,12 @@
 .callback-form {
   @include clearfix();
   position: relative;
- 
 
+  @supports (display: flex){
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
   &__item {
     float: left;
     width: 36.7256%;
