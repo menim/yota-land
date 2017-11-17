@@ -22,6 +22,10 @@
       display: flex;
       flex-wrap: wrap;
     }
+
+    @include breakpoint(small){
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -30,11 +34,17 @@
     line-height: 1;
     margin-right: 1.7699%;
     margin-bottom: 2em;
+    flex: 1 0 0;
 
     @include breakpoint(medium){
       width: 49%;
       margin-right: 2%;
       margin-bottom: 1em;
+
+      @supports (display: flex){
+        flex-basis: 49%;
+        flex-shrink: 1;
+      }
     }
 
     @include breakpoint(small){
