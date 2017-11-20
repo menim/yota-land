@@ -2,24 +2,14 @@
   &--header {
     float: left;
     position: relative;
-    margin-top: 13px;
-
-    @supports(display: flex){
-      margin-top: 0;
-    }
-
-   @include breakpoint(small){
-      margin-top: 26px;
-
-      @supports(display: flex){
-        margin-top: 0;
-      }
-    }
+    height: 100%;
+    
+    @include vertical-center();
   }
 
   &__image {
-  	vertical-align: middle;
-  	
+    vertical-align: middle;
+
     @include breakpoint(small){
       width: 100px;
       height: auto;
