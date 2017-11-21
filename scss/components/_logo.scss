@@ -3,8 +3,15 @@
     float: left;
     position: relative;
     height: 100%;
-    
     @include vertical-center();
+
+    @supports (display: flex){
+      height: auto;
+      
+      &:before {
+        display: none;
+      }
+    }
   }
 
   &__image {

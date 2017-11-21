@@ -10,11 +10,13 @@
   &--header {
     float: left;
     margin-left: 78px;
-    margin-top: 32px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 
     @supports (display: flex){
-      margin-top: 0;
-      margin-bottom: 0;
+      top: auto;
+      transform: translateY(0);
     }
 
     @include breakpoint(large){
