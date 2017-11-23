@@ -1,11 +1,5 @@
 .filter-form {
       font-size: 0; // set for delete margins before inline-block elements;
-  
-  @supports (display: flex){
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 
   &__item {
     font-size: 16px;
@@ -13,14 +7,6 @@
     margin-left: 1.8911%;
     width: 100%;
     max-width: 36.7994%;
-
-    @supports (display: flex){
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      margin: initial;
-    }
 
     @include breakpoint(small){
       max-width: 100%;
@@ -47,7 +33,7 @@
     }
 
     &:first-child {
-       margin-left: 0;
+      margin-left: 0;
     }
   }
 
