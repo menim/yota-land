@@ -7,6 +7,10 @@
     @supports (display: flex){
       display: flex;
       flex-wrap: wrap;
+
+      @include breakpoint(small){
+        flex-direction: row;
+      }
     }
   }
 
@@ -33,10 +37,6 @@
 
       @include breakpoint(medium){
         margin-right: 3.3333%;
-
-        @supports (display: flex){
-          margin-right: auto;
-        }
       }	
     }
 
