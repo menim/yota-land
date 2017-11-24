@@ -57,6 +57,10 @@
       @include breakpoint(medium){
         margin-right: 3.3333%;
       }
+
+      @include breakpoint(small){
+        margin-right: 0;
+      }
     }
 
     &:nth-child(3n){
