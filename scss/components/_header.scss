@@ -8,6 +8,10 @@
     align-items: center;
   }
 
+  @supports (display: flex){
+    @include grid-wrap;
+  }
+
   &:before {
     content: '';
     background-image: url('../images/filter-part-left.jpg');

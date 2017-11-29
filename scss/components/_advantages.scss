@@ -13,6 +13,10 @@
     @supports (display: flex){
       display: flex;
     }
+
+    @supports (display: grid){
+      @include grid-wrap;
+    }
   }
 
   &__item {
@@ -22,9 +26,6 @@
     text-align: center;
     padding: 0 10px;
 
-    @include breakpoint(small){
-      width: 100%;
-    }
 
     @supports (display: flex){
       display: flex;
@@ -34,6 +35,18 @@
       flex: 1;
       width: auto;
       text-align: initial;
+    }
+
+    @supports (display: grid){
+      grid-column: span 4;
+    }
+
+    @include breakpoint(small){
+      width: 100%;
+
+      @supports (display: grid){
+        grid-column: span 12;
+      }
     }
   }
 

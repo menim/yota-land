@@ -1,5 +1,9 @@
 .view-slogan {
 
+  @supports (display: grid){
+    @include grid-wrap;
+  }
+
   &__header {
     text-align: center;
     font-family: 'geometriaRegular', sans-serif;
@@ -8,6 +12,10 @@
     text-transform: uppercase;
     line-height: get-line-height(44px, 64px);
     margin: 0;
+
+    @supports (display: grid){
+      grid-column: span 12;
+    }
 
     @include breakpoint(medium){
       font-size: 1.75em;

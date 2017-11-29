@@ -13,16 +13,45 @@
       margin-left: auto;
     }
 
+    @supports (display: grid){
+      grid-column: 9 / 11;
+      margin: 0;
+      padding-right: 1.6em;
+    }
+
     @include breakpoint(large){
-      margin-right: 240px; 
+      margin-right: 240px;
+
+      @supports (display: grid){
+        grid-column: 8 / 11;
+        margin: 0 auto;
+        padding-right: 2em;
+      } 
+    }
+
+    @include breakpoint(medium){
+      @supports (display: flex){
+        grid-column: 5 / 10;
+        margin: 0;
+        padding-right: 0;
+      }
     }
     
     @include breakpoint(small){
       margin-right: 170px;
+
+      @supports (display: flex){
+        margin-right: 0;
+      }
     }
 
     @include breakpoint(mobile){
       margin-right: 10px;
+    
+      @supports (display: grid){
+        grid-column: 6 / 12;
+        margin-right: 0;
+      }
     }
   }
 
@@ -32,6 +61,10 @@
     font-size: 1em;
     font-family: 'geometriaBold', sans-serif;
     text-align: right;
+
+    @supports (display: grid){
+      text-align: left;
+    }
 
     @include breakpoint(large){
       font-size: .9em;

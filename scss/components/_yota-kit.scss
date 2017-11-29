@@ -16,6 +16,10 @@
       flex-wrap: wrap;
     }
 
+    @supports (display: grid){
+      @include grid-wrap;
+    }
+
     @include breakpoint(mobile){
       @supports(display: flex){
         flex-direction: column;
@@ -39,6 +43,10 @@
       width: auto;
     }
 
+    @supports (display: grid){
+      grid-column: 3 span;
+    }
+
     @include breakpoint(medium){
       width: 50%;
 
@@ -47,15 +55,27 @@
         flex-basis: 50%;
       }
 
-      @include breakpoint(mobile){
-        @supports (display: flex){
-          flex-basis: 0%;
-        }
+      @supports (display: grid){
+        grid-column: span 4;
       }
     }
-    
+
     @include breakpoint(small){
       width: 100%;
+      
+      @supports (display: grid){
+        grid-column: span 6 ;
+      }
+    }
+
+    @include breakpoint(mobile){
+      @supports (display: flex){
+        flex-basis: 0%;
+      }
+
+      @supports (display: grid){
+        grid-column: span 12;
+      }
     }
   }
 

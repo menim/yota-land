@@ -1,5 +1,10 @@
 .filter-form {
-      font-size: 0; // set for delete margins before inline-block elements;
+  font-size: 0; // set for delete margins before inline-block elements;
+
+  @supports (display: grid){
+    @include grid-wrap;
+    align-items: end
+  }
 
   &__item {
     font-size: 16px;
@@ -8,27 +13,67 @@
     width: 100%;
     max-width: 36.7994%;
 
+    @supports (display: grid){
+      grid-column: 1/5;
+      max-width: none;
+      margin-left: 0;
+    }
+
     @include breakpoint(small){
       max-width: 100%;
       display: block;
       margin-bottom: 1em;
+
+      @supports (display: grid){
+        grid-column: span 12;
+      }
     }
 
     &--big {
       max-width: 32.7433%;
 
+      @supports (display: grid){
+        grid-column: 8 / 13;
+        max-width: none;
+      }
+
       @include breakpoint(small){
         max-width: 100%;
         margin-left: 0;
+
+        @supports (display: grid){
+          grid-column: span 12;
+        }
       }
     }
 
     &--small {
       max-width: 12.3893%;
+      
+      @supports (display: grid){
+        grid-column: 5 / 6;
+        max-width: none;
+      }
+
+      &+& {
+        @supports (display: grid){
+          grid-column: 6 / 8; 
+        }
+        
+        @include breakpoint(small){
+          @supports (display: grid){
+              grid-column: span 12; 
+          }
+        }
+      }
 
       @include breakpoint(small){
         max-width: 100%;
         margin-left: 0;
+
+        @supports (display: grid){
+          grid-column: span 12;
+        }
       }
     }
 

@@ -46,6 +46,10 @@
     margin: 84px auto 0;
     display: block;
 
+    @supports (display: grid) {
+      grid-column: span 12; 
+    }
+
     @include breakpoint(medium){
       margin-top: 50px;
     }
@@ -55,6 +59,10 @@
     display: block;
     font-size: 16px;
     margin: 4em auto 8em;
+
+    @supports (display: grid){
+      grid-column: 12 span;
+    }
 
      @include breakpoint(medium){
       margin: 2em auto 4em;

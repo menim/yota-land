@@ -51,7 +51,7 @@
   }
 }
 
-@mixin breakpoint($point){
+@mixin breakpoint($point) {
   @if $point == large {
     @media (max-width: 1199px) { @content; }
   }
@@ -66,13 +66,19 @@
   }
 }
 
-@mixin vertical-center{
+@mixin vertical-center {
   &:before {
     content: "";
     display: inline-block;
     height: 100%;
     vertical-align: middle;
   }
+}
+
+@mixin grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px; 
 }
 
 
