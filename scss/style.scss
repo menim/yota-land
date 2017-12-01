@@ -29,13 +29,13 @@
 
 @import 'components/yota-lpg-equipment';
 
-@import 'components/callback-form'; 
+@import 'components/callback-form';
 
 @include normalize();
 @include font-face('geometriaBold', '../fonts/geometria-bold');
 @include font-face('geometriaItalic', '../fonts/geometria-italic');
 @include font-face('geometriaMediumI', '../fonts/geometria-mediumitalic');
-@include font-face('geometriaHeavy','../fonts/geometria-heavy');
+@include font-face('geometriaHeavy', '../fonts/geometria-heavy');
 @include font-face('geometriaRegular', '../fonts/geometria');
 @include font-face('geometriaExtraL', '../fonts/geometria-extralight');
 @include font-face('geometriaLight', '../fonts/geometria-light');

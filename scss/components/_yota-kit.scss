@@ -1,14 +1,14 @@
 .yota-kit {
-  padding-bottom: 2em;  
+  padding-bottom: 2em;
 
   @include breakpoint(medium) {
     padding-bottom: 2em;
   }
 
   .yota-kit__list {
-    padding-left: 0;
-    margin: 0;
     @include clearfix();
+    margin: 0;
+    padding-left: 0;
     text-align: center;
 
     @supports (display: flex){
@@ -20,7 +20,7 @@
       @include grid-wrap;
     }
 
-    @include breakpoint(mobile){
+    @include breakpoint(mobile) {
       @supports(display: flex){
         flex-direction: column;
       }
@@ -28,11 +28,11 @@
   }
 
   .yota-kit__item {
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 2em;
     padding: 0 10px;
     width: 25%;
-    float: left;
-    box-sizing: border-box;
-    margin-bottom: 2em;
 
     @supports (display: flex){
       display: flex;
@@ -47,7 +47,7 @@
       grid-column: 3 span;
     }
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       width: 50%;
 
       @supports (display: flex){
@@ -60,15 +60,15 @@
       }
     }
 
-    @include breakpoint(small){
+    @include breakpoint(small) {
       width: 100%;
-      
+
       @supports (display: grid){
-        grid-column: span 6 ;
+        grid-column: span 6;
       }
     }
 
-    @include breakpoint(mobile){
+    @include breakpoint(mobile) {
       @supports (display: flex){
         flex-basis: 0%;
       }
@@ -80,28 +80,28 @@
   }
 
   .yota-kit__header {
-  	font-size: 1.1875em;
-  	font-family: geometriaRegular, sans-serif;
-  	color: $main-color1;
-  	text-transform: uppercase;
-  	line-height: get-line-height(19px, 32px);
-  	letter-spacing: 0.02em;
-  	margin-top: 0;
-  	margin-bottom: 49px;
+    color: $main-color1;
+    font-family: geometriaRegular, sans-serif;
+    font-size: 1.1875em;
+    letter-spacing: .02em;
+    line-height: get-line-height(19px, 32px);
+    margin-bottom: 49px;
+    margin-top: 0;
+    text-transform: uppercase;
 
-    @include breakpoint(large){
+    @include breakpoint(large) {
       font-size: 1em;
       margin-bottom: 30px;
     }
   }
 
   .yota-kit__inner-list {
-  	font-size: 1em;
-  	font-family: geometriaLight, sans-serif;
-  	line-height: get-line-height(16px, 32px);
-  	color: $main-color1;
-  	padding-left: 0;
-  	margin-bottom: 0;
-  	margin-top: 40px;
+    color: $main-color1;
+    font-family: geometriaLight, sans-serif;
+    font-size: 1em;
+    line-height: get-line-height(16px, 32px);
+    margin-bottom: 0;
+    margin-top: 40px;
+    padding-left: 0;
   }
 }

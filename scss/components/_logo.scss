@@ -1,14 +1,14 @@
 .logo {
   &--header {
-    float: left;
-    position: relative;
-    height: 100%;
     @include vertical-center();
+    float: left;
+    height: 100%;
+    position: relative;
 
     @supports (display: flex){
       height: auto;
-      
-      &:before {
+
+      &::before {
         display: none;
       }
     }
@@ -22,11 +22,12 @@
   &__image {
     vertical-align: middle;
 
-    @include breakpoint(small){
-      width: 100px;
+    @include breakpoint(small) {
       height: auto;
+      width: 100px;
     }
   }
-}  
+}
+
 
 

@@ -1,39 +1,39 @@
 .l-outer-wrapper {
-  background-color: #fff;
+  background-color: $main-color1;
+  margin: 0 auto;
   max-width: 1920px;
   overflow-x: hidden;
-  margin: 0 auto; 
 
   &--header {
-    background-image: linear-gradient(to right,$additional-green 0%, $additional-green  50%, $additional-red 50%, $additional-red 100%)
+    background-image: linear-gradient(to right, $additional-green 0%, $additional-green  50%, $additional-red 50%, $additional-red 100%);
   }
 
   &--with-bg {
     background-image: url('../images/header-bg.jpg');
-    position: relative;
     background-size: cover;
-    padding-top: 192px;
     padding-bottom: 160px;
+    padding-top: 192px;
+    position: relative;
 
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0; 
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 0;
-      }
+    @include breakpoint(medium) {
+      padding-bottom: 70px;
+      padding-top: 102px;
+    }
 
-      @include breakpoint(medium){
-        padding-top: 102px;
-        padding-bottom: 70px;
-      }
+    @include breakpoint(small) {
+      padding-bottom: 40px;
+      padding-top: 73px;
+    }
 
-      @include breakpoint(small){
-        padding-top: 73px;
-        padding-bottom: 40px;
-      }
+    &::before {
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 0;
+    }
   }
 
   &--secondary-theme {
@@ -41,24 +41,24 @@
   }
 }
 
-.l-inner-wrapper { 
-  max-width: 1356px;
+.l-inner-wrapper {
+  display: grid;
   margin: 0 auto;
+  max-width: 1356px;
   padding-left: 15px;
   padding-right: 15px;
-  display: grid;
 
   &--pb-lg {
     padding-bottom: 136px;
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       padding-bottom: 32px;
     }
   }
 
   &--depth {
-    z-index: 1;
     position: relative;
+    z-index: 1;
   }
 }
 

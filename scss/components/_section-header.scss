@@ -1,20 +1,20 @@
 .section-header {
   color: $main-color2;
-  font-size: 2.75em;
   font-family: geometriaBold, sans-serif;
+  font-size: 2.75em;
+  letter-spacing: .06em;
+  margin-bottom: 64px;
+  margin-top: 64px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-top: 64px;
-  margin-bottom: 64px;
 
   @include breakpoint(medium) {
     font-size: 2em;
-    margin-top: 32px;
     margin-bottom: 32px;
+    margin-top: 32px;
   }
 
-  @include breakpoint(small){
+  @include breakpoint(small) {
     font-size: 1.5em;
   }
 
@@ -23,8 +23,8 @@
   }
 
   &--advantages {
-    margin-top: 32px;
     line-height: 1;
+    margin-top: 32px;
   }
 
   &--yota-accessories {
@@ -36,20 +36,21 @@
   }
 
   &--yota-lpg-equipment {
-    margin-top: 79px; 
+    margin-top: 79px;
 
-    @include breakpoint(medium){
-      margin-top: 50px;
+    @include breakpoint(medium) {
       margin-bottom: 20px;
+      margin-top: 50px;
     }
   }
 
   &--footer {
     color: $main-color1;
-    text-align: left;
     margin-bottom: 33px;
-      span {
-        font-family: geometriaLight, sans-serif;
-      }
+    text-align: left;
+
+    span {
+      font-family: geometriaLight, sans-serif;
+    }
   }
 }

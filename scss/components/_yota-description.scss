@@ -1,9 +1,9 @@
 .yota-description {
-  font-size: 1em;
-  font-family: geometriaMediumI, sans-serif;
   color: $main-color2;
+  font-family: geometriaMediumI, sans-serif;
+  font-size: 1em;
 
-  @include breakpoint(large){
+  @include breakpoint(large) {
     font-size: .9em;
   }
 
@@ -24,9 +24,9 @@
       margin: 0;
     }
 
-    @include breakpoint(large){
-      margin-left: 50px;
+    @include breakpoint(large) {
       display: block;
+      margin-left: 50px;
 
       @supports (display: grid){
         grid-column: 3 / 8;
@@ -35,7 +35,7 @@
       }
     }
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       display: none;
     }
   }

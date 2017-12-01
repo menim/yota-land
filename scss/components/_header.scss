@@ -1,7 +1,7 @@
 .header {
-  background-color: #fff;
-  position: relative;
+  background-color: $main-color1;
   height: 96px;
+  position: relative;
 
   @supports (display: flex){
     display: flex;
@@ -12,35 +12,35 @@
     @include grid-wrap;
   }
 
-  &:before {
-    content: '';
+  &::before {
     background-image: url('../images/filter-part-left.jpg');
+    content: '';
     display: block;
-    position: absolute;
-    left: -186px;
-    width: 389px;
     height: 96px;
+    left: -186px;
+    position: absolute;
+    width: 389px;
 
-   @include breakpoint(small){
+    @include breakpoint(small) {
       left: -256px;
-   }
+    }
   }
 
-  &:after {
-    content: '';
+  &::after {
     background-image: url('../images/filter-part-right.jpg');
-    position: absolute;
+    content: '';
     display: block;
-    width: 310px;
     height: 96px;
+    position: absolute;
     right: -80px;
     top: 0;
+    width: 310px;
 
-    @include breakpoint(small){
+    @include breakpoint(small) {
       right: -150px;
     }
 
-    @include breakpoint(mobile){
+    @include breakpoint(mobile) {
       display: none;
     }
   }

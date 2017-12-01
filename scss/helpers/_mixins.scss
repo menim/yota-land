@@ -1,6 +1,5 @@
-// Str replace 
-
-@function str-replace($string, $search, $replace: "") {
+// Str replace
+@function str-replace($string, $search, $replace: '') {
   $index: str-index($string, $search);
 
   @if $index {
@@ -9,26 +8,23 @@
 
   @return $string;
 }
-
-
-//Font mixin 
-
+//Font mixin
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf) {
   $src: null;
 
   $extmods: (
-    eot: "?"
+    eot: '?'
   );
 
   $formats: (
-  	otf: "opentype",
-    ttf: "truetype"
+  	otf: 'opentype',
+    ttf: 'truetype'
   );
 
   @each $ext in $exts {
     $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
     $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    $src: append($src, url(quote($path + '.' + $extmod)) format(quote($format)), comma);
   }
 
   @font-face {
@@ -40,35 +36,32 @@
 }
 
 @function get-line-height($font-size, $line-height) {
-   @return $line-height / $font-size;
-}  
+  @return $line-height / $font-size;
+}
 
 @mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
+  &::after {
     clear: both;
+    content: '';
+    display: table;
   }
 }
 
 @mixin breakpoint($point) {
   @if $point == large {
     @media (max-width: 1199px) { @content; }
-  }
-  @else if $point ==  medium {
+  }@else if $point == medium {
     @media (max-width: 1024px)  { @content; }
-  }
-  @else if $point ==  small {
+  }@else if $point == small {
     @media (max-width: 767px)  { @content; }
-  }
-  @else if $point ==  mobile {
+  }@else if $point == mobile {
     @media (max-width: 479px)  { @content; }
   }
 }
 
 @mixin vertical-center {
-  &:before {
-    content: "";
+  &::before {
+    content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
@@ -78,7 +71,7 @@
 @mixin grid-wrap {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 24px; 
+  grid-column-gap: 24px;
 }
 
 
