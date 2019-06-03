@@ -13,7 +13,11 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "browser-sync": "^2.26.5",
+=======
+    "browser-sync": "^2.24.6",
+>>>>>>> 50258026e9d2d4fdbcdc99bda257513b7809d244
 =======
     "browser-sync": "^2.24.6",
 >>>>>>> 50258026e9d2d4fdbcdc99bda257513b7809d244
@@ -27,7 +31,11 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "gulp-useref": "^3.1.6",
+=======
+    "gulp-useref": "^3.1.5",
+>>>>>>> 50258026e9d2d4fdbcdc99bda257513b7809d244
 =======
     "gulp-useref": "^3.1.5",
 >>>>>>> 50258026e9d2d4fdbcdc99bda257513b7809d244
