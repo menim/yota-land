@@ -12,7 +12,11 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+<<<<<<< HEAD
     "browser-sync": "^2.26.5",
+=======
+    "browser-sync": "^2.24.6",
+>>>>>>> 50258026e9d2d4fdbcdc99bda257513b7809d244
     "del": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.0.0",
@@ -22,7 +26,11 @@
     "gulp-imageoptim": "^1.0.9",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
+<<<<<<< HEAD
     "gulp-useref": "^3.1.6",
+=======
+    "gulp-useref": "^3.1.5",
+>>>>>>> 50258026e9d2d4fdbcdc99bda257513b7809d244
     "run-sequence": "^2.1.0"
   },
   "dependencies": {
